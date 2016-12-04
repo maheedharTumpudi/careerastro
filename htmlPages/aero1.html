@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CAREERASTRO|List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+body {
+    padding-top: 15px;
+    background-color: #f9f9f9;
+}
+
+/*REQUIRED*/
+.carousel-row {
+    margin-bottom: 10px;
+}
+
+.slide-row {
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 150px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+
+
+.slide-carousel {
+    width: 20%;
+    float: left;
+    display: inline-block;
+}
+
+.slide-carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.slide-carousel .carousel-indicators li {
+    border-radius: 0;
+    width: 20px;
+    height: 6px;
+}
+
+.slide-carousel .carousel-indicators .active {
+    margin: 1px;
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: block;
+    float: left;
+    width: 80%;
+    max-height: 76%;
+    padding: 1.5% 2% 2% 2%;
+    overflow-y: auto;
+}
+
+.slide-content h4 {
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+.slide-footer {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 78%;
+    height: 20%;
+    margin: 1%;
+}
+
+/* Scrollbars */
+.slide-content::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.slide-content::-webkit-scrollbar-thumb:vertical {
+  margin: 5px;
+  background-color: #999;
+  -webkit-border-radius: 5px;
+}
+ 
+.slide-content::-webkit-scrollbar-button:start:decrement,
+.slide-content::-webkit-scrollbar-button:end:increment {
+  height: 5px;
+  display: block;
+}
+
+.footer-bs {
+    background-color: #3c3d41;
+	padding: 60px 40px;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 20px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<img src="title.jpg" alt="title" style="width:1200px;height:100px;">
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="bstrail1.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES <span class="caret"></span></a>
+          <ul class="hover dropdown-menu">
+            <li><a href="#">Sciences</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutfinal.html">ABOUT</a></li>
+        <li><a href="contact final.html">CONTACT</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sign trail.html" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="loginform.html" target="_blank"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" style="text-align:center;">    Top AERONAUTICAL ENGINEERING colleges
+                    
+                </h1>
+            </div>
+        </div>
+	<h2 style="margin-left:300px;">INDIA</h2>
+               
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            
+        </div>
+    </div>
+    <hr>
+	<br>
+    <!-- Begin of rows -->
+			<div class="row carousel-row">
+			<a class="page-link" style="text-decoration:none;color:black;" href="#">
+			<div class="col-xs-8 col-xs-offset-2 slide-row">
+				<div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-1" data-slide-to="1"></li>
+					
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  
+				  <div class="carousel-inner">
+				  
+					<div class="item active">
+						<img src="C:\Users\USER\Desktop\careerastro\collegepics\1.1.jpg" alt="Image">
+					</div>
+					<div class="item">
+						<img src="C:\Users\USER\Desktop\careerastro\collegepics\1.2.jpg" alt="Image">
+					</div>
+					
+				  </div>
+				  
+				</div>
+				
+				<div class="slide-content">
+					<h4>INDIAN INSTITUTE OF TECHNOLOGY ,BOMBAY</h4>
+					<p>
+						 Powai, Mumbai, Maharashtra 400076,Phone: 022 2572 2545
+
+					</p>
+				</div>
+				<div class="slide-footer">
+					<span class="pull-right buttons">
+						<!--<button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+						<button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+					</span>
+				</div>
+			</div>
+			</a>
+		</div>
+<br>
+    <div class="row carousel-row">
+	<a class="page-link" style="text-decoration:none;color:black;" href="#">
+        <div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-2" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-2" data-slide-to="1"></li>
+                >
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\2.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\2.2.jpg" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>INDIAN INSTITUTE OF TECHNOLOGY,IIT KHARAGPUR</h4>
+                <p>
+                    Kharagpur, West Bengal 721302,Phone: 03222 255 221
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                    <!--<button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+	</a>
+		</div>
+	<br>
+        <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+               <!-- <li data-target="#carousel-1" data-slide-to="2"></li>-->
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\3.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\3.2.png" alt="Image">
+                </div>
+               <!-- <div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=3" alt="Image">
+                </div>-->
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>INDIAN INSTIUTE OF TECHNOLOGY,IIT KANPUR</h4>
+                <p>
+				 Kalyanpur, Kanpur, Uttar Pradesh 208016,Phone: 0512 259 0151
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                    <!--<button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+<br>
+    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+               
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\4.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\4.2.png" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>INDIAN INSITUTE OF TECHNOLOGY,IIT MADRAS</h4>
+                <p>
+                    Beside Adyar Cancer Institute, Opposite to C.L.R.I, Sardar Patel Road,<br> Adyar, Chennai, Tamil Nadu 600036
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                    <!--<button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+
+	<br>
+	    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\5.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\5.2.png" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>ANNA UNIVERSITY</h4>
+                <p>anna university ,kotturpuram,chennai,tamil nadu,ph:04422357264
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+
+<br>	
+	    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\6.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\6.2.jpg" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>PEC UNIVERSITY OF TECHNOLOGY</h4>
+                <p>
+                    Sector 12, Chandigarh, 160012;Phone: 0172 275 3054
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+<br>	
+	    <div class="row carousel-row">
+		<a class="page-link" style="text-decoration:none;color:black;" href="#">
+	   <div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\7.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\7.2.png" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>BENGAL ENINEEERING  AND SCIENCE UNIVERSITY</h4>
+                <p>
+                    P.O.Botanic Garden, Shalimar, Howrah, West Bengal 711103,PH: 033 2668 4562
+
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+
+	<br>	
+	    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\8.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\8.2.png" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>MANIPAL INSITUTE OF TECHNOLOGY</h4>
+                <p>
+                     Udupi Karkala Road, Manipal, Karnataka 576104,PH:092437 77733
+
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+
+<br>	
+	    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+               
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\9.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\9.2.jpg" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>AMRITHA INNSITUTE OF TECHNOLOGY AND SCIENCES</h4>
+                <p>
+                     Amritanagar, Ettimadai, Coimbatore, Tamil Nadu 641112,PH: 0422 268 5000
+
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+	
+<br>	
+	    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\10.1.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\10.2.jpg" alt="Image">
+                </div>
+                
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>SATHYABAMA UNIVERSITY</h4>
+                <p>
+                     Rajiv Gandhi Salai, Jeppiaar Nagar, Chennai, Tamil Nadu ,PH:044 2450 3150
+
+
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+		</a>
+    </div>
+	
+	<br>	
+	    <div class="row carousel-row">
+        <a class="page-link" style="text-decoration:none;color:black;" href="#">
+		<div class="col-xs-8 col-xs-offset-2 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\11.1.png" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="C:\Users\USER\Desktop\careerastro\collegepics\11.2.jpg" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=3" alt="Image">
+                </div>
+              </div>
+            </div>
+            <div class="slide-content">
+                <h4>SRM UNIVERSITY</h4>
+                <p>
+                     SRM Nagar, Potheri, Kattankulathur, Kancheepuram District, PH:044 4743 7500
+
+
+
+
+                </p>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                   <!-- <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show</button>
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-fw fa-shopping-cart"></i> Buy</button>-->
+                </span>
+            </div>
+        </div>
+    </div>
+	</a>
+</div>
+<br>
+<br>
+<div class="text-center">
+<nav aria-label="Page navigation-lg" style="font-size:130%">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="aero1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="aero2.html">2</a></li>
+    <!--<li class="page-item"><a class="page-link" href="btech3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="btech4.html">4</a></li>
+    <li class="page-item"><a class="page-link" href="btech5.html">5</a></li>-->
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+
+<div class="container">
+    <section style="height:80px;"></section>
+	<div class="row" style="text-align:center;">
+		
+	</div>
+    <!----------- Footer ------------>
+    <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<h2>CAREERASTRO</h2>
+                <p>Our sole purpose of creating this portal(AIM) is to empower every user on the minute and misunderstood choices...<br>
+To lead you to a career without any confusion by completely blotting it out.</p>
+                <br>
+				<p>All rights reserved © CAREERASTRO </p>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>categories</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Top colleges</a></li>
+                        <li><a href="#">Exams</a></li>
+                        <li><a href="#">Latest updates</a></li>
+                        
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">google+</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    
+
+</div>
+
+</body>
+</html>
